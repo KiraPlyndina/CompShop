@@ -1,0 +1,45 @@
+﻿<Page x:Class="CompShop.Pages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CompShop.Pages"
+      mc:Ignorable="d" 
+      
+      d:DesignHeight="500" 
+      d:DesignWidth="900"
+      
+      Title="MainMenuPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btnStore"
+                Click="btnStore_Click"
+                Content="Магазины"
+                Grid.Column="1"
+                Grid.Row="1"/>
+        <Button x:Name="btnStoreComp"
+                Click="btnStoreComp_Click"
+                Content="Наличие"
+                Grid.Column="1"
+                Grid.Row="2"/>
+        <Button x:Name="btnComponents"
+                Click="btnComponents_Click"
+                Content="Комплектующие"
+                Grid.Column="1"
+                Grid.Row="3"/>
+    </Grid>
+</Page>
